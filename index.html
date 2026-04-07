@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drone Image Upload</title>
+</head>
+<body>
+
+<h2>Upload Real-Time Images for Stitching</h2>
+
+<form action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="images" accept="image/*" multiple required>
+    <br><br>
+    <button type="submit">Upload & Stitch</button>
+</form>
+
+<br><br>
+
+<h3>Stitched Output:</h3>
+<img id="stitched" src="/stitched/stitched.jpg" width="600" />
+
+</body>
+</html>
